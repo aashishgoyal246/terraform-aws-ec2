@@ -130,7 +130,7 @@ variable "subnet_ids" {
 
 variable "associate_public_ip_address" {
   type        = bool
-  default     = true
+  default     = false
   description = "Associate a public IP address with the instance."
 }
 

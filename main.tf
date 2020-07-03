@@ -71,10 +71,8 @@ resource "aws_instance" "default" {
   lifecycle {
     ignore_changes = [
       tags,
+      ipv6_addresses,
       volume_tags,
-      private_ip,
-      root_block_device,
-      ebs_block_device,
     ]
   }
 }

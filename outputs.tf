@@ -26,7 +26,7 @@ output "private_ip" {
 }
 
 output "key_name" {
-  value       = join("", aws_instance.default.*.key_name)
+  value       = aws_instance.default.*.key_name
   description = "The key name of the instance."
 }
 
